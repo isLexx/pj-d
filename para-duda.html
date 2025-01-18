@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surpresa para  minha chata</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fbeaff;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      color: #e63946;
+      font-size: 3rem;
+      animation: pop 1s ease infinite alternate;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    button {
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+    img {
+      margin-top: 20px;
+      width: 300px;
+      height: auto;
+    }
+    @keyframes pop {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>eai minha chata... ❤️</h1>
+  <p> fiz isso para você! Porque você é especial demais. 😊</p>
+  <button onclick="revelarSurpresa()">para:  eduarda chatinha de lima clique aqui!</button>
+  <div id="surpresa" style="display: none;">
+    <p>voce é a menina mais chata e a mais incrivel do mundo, sabia? te amo chata hehe </p>
+    <img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" alt="Surpresa!">
+  </div>
+  <script>
+    function revelarSurpresa() {
+      document.getElementById('surpresa').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
